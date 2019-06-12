@@ -1,0 +1,12 @@
+{
+  "test_login.py": true,
+  "test_login.py::TestLogin::()::test_login_password": true,
+  "test_login.py::TestLogin::()::test_login_password[15600534760-111111-\\u5bc6\\u7801\\u9519\\u8bef]": true,
+  "test_login.py::TestLogin::()::test_login_password[156005347600-111111-\\u624b\\u673a\\u53f7\\u7801]": true,
+  "test_quotation.py::TestQuotation::()::test_index": true,
+  "test_search.py::TestSearch::()::test_is_follow_user": true,
+  "test_selected.py::TestSelected::()::test_add_stock": true,
+  "test_selected.py::TestSelected::()::test_is_selected_stock": true,
+  "test_selected.py::TestSelected::()::test_is_selected_stock_hs[\\u62db\\u5546\\u94f6\\u884c-SH600036]": true,
+  "test_selected.py::TestSelected::()::test_price": true
+}

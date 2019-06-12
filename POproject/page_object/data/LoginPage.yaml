@@ -1,0 +1,34 @@
+loginByPassword:
+  - locator: tv_login_by_phone_or_others
+    by: id
+    action: click
+  - locator: tv_login_with_account
+    by: id
+    action: click
+  - element: login_account
+    action: sendKeys
+    text: $var1
+  - element: login_password
+    action: sendKeys
+    text: $var2
+  - by: id
+    locator: button_next
+    action: click
+
+getErrorMsg:
+  - xxx
+#定位符(多平台)
+#多平台封装原则：只有定位符、定位方式不同，其他执行顺序等都相同，才可以使用
+#太多不同部分就不要在yaml层级去区分了
+elements:
+  login_account:
+    android:
+      by: id
+      locator: login_account
+    ios:
+      by: xpath
+      locator: dddddd
+  login_password:
+    android:
+      by: id
+      locator: login_password

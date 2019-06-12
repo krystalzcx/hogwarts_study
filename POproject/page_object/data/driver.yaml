@@ -1,0 +1,40 @@
+#告诉当前是在android系统下执行，加载相应的信息(全在这加载)
+#实现多平台
+
+install_app:
+  server: http://localhost:4723/wd/hub
+  implicitly_wait: 10
+  caps:
+    android:
+      platformName: android
+      deviceName: hogwarts
+      appPackage: com.xueqiu.android
+      appActivity: .view.WelcomeActivityAlias
+      autoGrantPermissions: true
+    ios:
+
+
+
+restart_app:
+  server: http://localhost:4723/wd/hub
+  implicitly_wait: 10
+  caps:
+    android:
+      platformName: android
+      deviceName: hogwarts
+      appPackage: com.xueqiu.android
+      appActivity: .view.WelcomeActivityAlias
+      autoGrantPermissions: true
+      noReset: true
+      unicodeKeyboard: true
+      resetKeyboard: true
+    ios: {}
+    wxmp: {}
+
+
+
+#需要测试不同平台时，修改platform即可
+#platform和上方的platformName无关联，实际是和caps下的android和ios关联，但是yaml文件中不做直接关联
+#关联实际是在代码中完成的
+#platform可以对应的值：android ios wxmp
+platform: android
